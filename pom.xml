@@ -18,7 +18,9 @@
         <license/>
     </licenses>
     <developers>
-        <developer/>
+        <developer>
+            <name>horatiucd</name>
+        </developer>
     </developers>
     <scm>
         <connection/>
