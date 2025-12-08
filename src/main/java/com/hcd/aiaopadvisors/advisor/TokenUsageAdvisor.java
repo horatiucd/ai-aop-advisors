@@ -67,7 +67,7 @@ public class TokenUsageAdvisor implements BaseAdvisor {
             var promptTokens = JsonPath.read(json, "$.metadata.usage.promptTokens");
             var completionTokens = JsonPath.read(json, "$.metadata.usage.completionTokens");
             var totalTokens = JsonPath.read(json, "$.metadata.usage.totalTokens");
-            log.debug("Response: promptTokens = {}, completionTokens = {}, totalTokens = {}",
+            log.debug("Response: promptTokens = {}, completionTokens = {}, totalTokens = {}.",
                     promptTokens, completionTokens, totalTokens);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
